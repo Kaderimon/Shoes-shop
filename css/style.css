@@ -51,6 +51,7 @@ strong { font-weight: bold; }
 .clearfix:after{
 	content: " ";
 	display: table;
+	clear: both;
 }
 .clearfix:after{clear: both;}
 
@@ -68,6 +69,10 @@ body{
 	height: 115px;
     border-bottom: 2px solid #e5e5e5;
     padding-top: 46px;
+    font-family: 'Lato';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
 }
 .logo{
 	background: #000;
@@ -86,13 +91,96 @@ body{
 .menu{
 	float:left;
 }
-.basket{
-	float:left;
-}
-.search-form{
-	float:left;
-	margin-top: -4px;
-}
 .menu__item{
 	float: left;
+	margin-left: 50px;
+}
+.basket{
+	float:right;
+	position: relative;
+    width: 90px;
+}
+.basket__text{
+	position: absolute;
+    top: 0;
+    left: 28px;
+}
+.search-form{
+	float:right;
+	margin-top: -13px;
+	display: table;
+	margin-right: 36px;
+}
+.search-form__button{
+	display: table-cell;
+    vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border:1px solid black;
+	background-image: url(../img/search.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.search-form__input{
+	height: 40px;
+	display: table-cell;
+    vertical-align: middle;
+}
+
+.footer{
+	display: flex;
+ 	justify-content: space-between;
+	-webkit-flex-wrap: no-wrap;
+	-moz-flex-wrap: no-wrap;
+	-ms-flex-wrap: no-wrap;
+	-o-flex-wrap: no-wrap;
+	flex-wrap: no-wrap;
+	margin-top: 30px;
+    margin-bottom: 30px;
+}
+.footer-item{
+    font-family: 'Lato';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+}
+.footer-wrap{
+	border-left: 1px solid #e5e5e5;
+	    padding-left: 10px;
+    
+}
+.footer-item__text{
+    font-family: 'Lato';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.footer-item__button{
+	float: left;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border:1px solid black;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 12px;
+		margin-top:20px;
+}
+.footer-item__button_tweet{
+	background-image: url(../img/tweet.png);
+}
+.footer-item__button_face{
+	background-image: url(../img/facebook.png);
+}
+.footer-item__button_insta{
+	background-image: url(../img/instagram.png);
+	margin-right: 0;
+}
+.footer-item__list{
+	padding-bottom: 10px;
+}
+.footer-wrap:last-child{
+	margin-right: 50px;
 }
