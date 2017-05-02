@@ -98,7 +98,7 @@ body{
 .basket{
 	float:right;
 	position: relative;
-    width: 90px;
+    width: 7.25%;
 }
 .basket__text{
 	position: absolute;
@@ -109,7 +109,7 @@ body{
 	float:right;
 	margin-top: -13px;
 	display: table;
-	margin-right: 36px;
+	margin-right: 2.9%;
 }
 .search-form__button{
 	display: table-cell;
@@ -126,6 +126,120 @@ body{
 	height: 40px;
 	display: table-cell;
     vertical-align: middle;
+}
+
+
+
+.arrivals{
+	text-align: center;
+	font-family: 'Lato';
+	margin:140px 0;
+}
+.arrivals__title{
+	font-weight: normal;
+    font-style: normal;
+    font-size: 72px;
+    margin-bottom: 30px;
+}
+.arrivals__text{
+	font-weight: normal;
+    font-style: italic;
+    font-size: 24px;
+    color: #606060;
+    margin-bottom: 60px;
+}
+.arrivals__button{
+	width: 18.5%;
+	height: 60px;
+	background-color: #fff;
+	border:1px solid black;
+	font-family: 'Lato';
+	font-size: 14px;
+}
+
+
+.products_item{
+    float: left;
+    height: 295px;
+    width: 295px;
+    background-image: url(../img/items.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+}
+.product__item-wrap{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.even{
+	background-image: url(../img/photo.jpg);
+}
+
+
+.sign-up{
+	text-align: center;
+    font-family: 'Lato';
+    margin: 140px 0;
+}
+.sign-up__title{
+	font-weight: bold;
+    font-style: normal;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.sign-up__text{
+	font-weight: normal;
+    font-style: italic;
+    font-size: 18px;
+    color: #606060;
+    margin-bottom: 55px;
+}
+.sign-up__input{
+	height: 55px;
+    width: 38.7%;
+}
+.sign-up__button{
+	height: 55px;
+	width: 7.58%;
+	margin-left: -0.3%;
+	background-color: #f68236;
+	border: 1px solid #e67429;
+}
+
+.slider{
+	position:relative;
+	height: 120px;
+	padding: 0 40px;
+	margin:60px 0;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.slider__button_left{
+	height: 120px;
+	width: 3.22%;
+	border:0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../img/left_arrow.png);
+	position: absolute;
+	top: 0;
+	left:0;
+}
+.slider__button_right{
+	height: 120px;
+	width: 3.4%;
+	border:0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../img/right_arrow.png);
+	position: absolute;
+	top: 0;
+	right:0;
+}
+.slider img{
+	width: 200px;
+	height: 120px;
 }
 
 .footer{
@@ -147,7 +261,7 @@ body{
 }
 .footer-wrap{
 	border-left: 1px solid #e5e5e5;
-	    padding-left: 10px;
+	padding-left: 10px;
     
 }
 .footer-item__text{
@@ -165,7 +279,7 @@ body{
 	border:1px solid black;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin-right: 12px;
+	margin-right: 1%;
 	margin-top:20px;
 }
 .footer-item__button_tweet{
@@ -181,70 +295,6 @@ body{
 .footer-item__list{
 	padding-bottom: 10px;
 }
-.footer-wrap:last-child{
-	margin-right: 50px;
-}
-
-
-.arrivals{
-	text-align: center;
-	font-family: 'Lato';
-	margin:140px 0;
-}
-.arrivals__title{
-	font-weight: bold;
-    font-style: normal;
-    font-size: 72px;
-    margin-bottom: 30px;
-}
-.arrivals__text{
-	font-weight: normal;
-    font-style: italic;
-    font-size: 24px;
-    color: #606060;
-    margin-bottom: 60px;
-}
-.arrivals__button{
-	width: 230px;
-	height: 60px;
-	background-color: #fff;
-	border:1px solid black;
-	font-family: 'Lato';
-	font-size: 14px;
-}
-
-
-.slider{
-	position:relative;
-	height: 120px;
-	padding: 0 40px;
-	margin:60px 0;
-	white-space: nowrap;
-	overflow: hidden;
-}
-.slider__button_left{
-	height: 120px;
-	width: 40px;
-	border:0;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-image: url(../img/left_arrow.png);
-	position: absolute;
-	top: 0;
-	left:0;
-}
-.slider__button_right{
-	height: 120px;
-	width: 40px;
-	border:0;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-image: url(../img/right_arrow.png);
-	position: absolute;
-	top: 0;
-	right:0;
-}
-.slider img{
-	width: 200px;
-	height: 120px;
+.footer-item:nth-child(4) {
+    margin-right: 4.03%;
 }
