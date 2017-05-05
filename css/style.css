@@ -124,7 +124,7 @@ body{
 }
 .search-form__input{
 	height: 40px;
-	display: table-cell;
+	display: none;
     vertical-align: middle;
 }
 
@@ -217,7 +217,7 @@ body{
 }
 .slider__button_left{
 	height: 120px;
-	width: 3.22%;
+	width: 3.4%;
 	border:0;
 	background-repeat: no-repeat;
 	background-position: center;
