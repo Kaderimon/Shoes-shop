@@ -8,26 +8,28 @@
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/header.js" defer></script>
+	<script type="text/javascript" src="js/start.js" defer></script>
 	<script type="text/javascript" src="js/slider.js" defer></script>
 </head>
 <body>
 	<div id="wrapper" class="clearfix">
-		<header class="header">
+		<header class="header clearfix">
 			<div class="logo">
 				<h1 class="logo__text">SH</h1>
 			</div>
 			<nav class="menu clearfix">
 				<ul>
-					<li class="menu__item">Woman</li>
-					<li class="menu__item">Men</li>
-					<li class="menu__item">Kids</li>
-					<li class="menu__item">Comming Soon</li>
+					<li class="menu__item"><a href="category-all.html">Woman</a></li>
+					<li class="menu__item"><a href="category-all.html">Men</a></li>
+					<li class="menu__item"><a href="category-all.html">Kids</a></li>
+					<li class="menu__item"><a href="category-all.html">Comming Soon</a></li>
 				</ul>
 			</nav>
 			<div class="basket">
 					<img src="img/basket.png" alt="">
 					<p class="basket__text">Basket(0)</p>
 			</div>
+			<button class="search-button"></button>
 			<form class="search-form">
 			    <input class="search-form__input" type="search" placeholder="Search something...">
 			    <button type="sumbit" class="search-form__button"></button>
@@ -124,7 +126,7 @@
 			<section class="sign-up">
 				<h3 class="sign-up__title">SIGN IP TO RECEIVE OUR UPDATES</h3>
 				<p class="sign-up__text">Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penetibus et ultrices volutpat.</p>
-				<form action="">
+				<form action="" class="sign-up__form">
 					<input class="sign-up__input"type="email" placeholder="Your e-mail">
 					<button class="sign-up__button" type="submit" value="Submit">Add</button>
 				</form>
