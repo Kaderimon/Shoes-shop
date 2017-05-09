@@ -4,7 +4,7 @@
 		document.body.addEventListener("click", function(e) {
 			switch (e.target.className) {
 				case 'logo__text':
-					location.href = '#';
+					location.href = 'index.html';
 					break;
 				case 'search-button':
 					let formShow = document.querySelector('.search-form').style.display = 'table';
