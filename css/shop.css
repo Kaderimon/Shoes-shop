@@ -31,9 +31,12 @@ body {
 	line-height: 1;
 }
 ol, ul {list-style: none;}
-a, a:hover{
+a{
 	text-decoration: none;
 	color:#000;
+}
+a:hover{
+	text-decoration: underline;
 }
 hr{
 	display: none;
@@ -81,6 +84,7 @@ body{
 	float:left;
 	display: table;
 	margin-top: -13px;
+	cursor: pointer;
 }
 .logo__text{
 	display: table-cell;
@@ -112,6 +116,7 @@ body{
 	float:right;
 	position: relative;
     width: 88px;
+    cursor: pointer;
 }
 .basket__text{
 	position: absolute;
@@ -148,6 +153,10 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     float: right;
+   	cursor: pointer;
+}
+.search-button:hover{
+	opacity: 0.5;
 }
 .search-form__input{
 	height: 40px;
@@ -203,6 +212,9 @@ input[type=number]::-webkit-inner-spin-button {
 .order-head__elem:first-child{
 	width: 100px;
 }
+.order-item__prod{
+	width: 100px;
+}
 .order-item__img{
 	width: 100px;
 	height: 100px;
@@ -240,10 +252,12 @@ input[type=number]::-webkit-inner-spin-button {
 	width: 70px;
 	text-align: center;
 }
+.order-head__elem,
 .order-item__del{
 	width: 65px;
 	background: none;
     border: 0;
+    cursor: pointer;
 }
 .total{
 	display: flex;
@@ -284,6 +298,9 @@ input[type=number]::-webkit-inner-spin-button {
 	width: 174px;
 	height: 53px;
 }
+.buttons__order:hover{
+	background: #e67429;
+}
 .footer{
 	display: flex;
  	justify-content: space-between;
@@ -323,6 +340,7 @@ input[type=number]::-webkit-inner-spin-button {
 	background-position: center;
 	margin-right: 1%;
 	margin-top:20px;
+	cursor: pointer;
 }
 .footer-item__button_tweet{
 	background-image: url(../img/tweet.png);

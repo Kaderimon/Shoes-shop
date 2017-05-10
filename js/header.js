@@ -10,22 +10,28 @@
 					let formShow = document.querySelector('.search-form').style.display = 'table';
 					e.target.style.display = 'none';
 					document.querySelector('.search-form__input').focus();
-				break;
+					break;
 				case 'search-form__button':
 					checkSearchField(e);
-				break;
+					break;
+				case 'basket':
+					location.href = 'shopping-bag.html';
+					break;
 				default:
 					//console.log(e.target.className);
-				break;
+					break;
 			}
+		});
+		document.querySelector('.basket').addEventListener("click", function(e) {
+			location.href = 'shopping-bag.html';
 		});
 	});
 
-	function checkSearchField(e){
+	function checkSearchField(e) {
 		let field = document.querySelector('.search-form__input').value;
 		if (field != "") {
 			location.href = 'category-all.html';
-		}else{
+		} else {
 			e.preventDefault();
 			document.querySelector('.search-form').style.display = 'none';
 			document.querySelector('.search-button').style.display = 'block';
