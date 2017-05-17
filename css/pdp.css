@@ -192,9 +192,21 @@ body{
 	width: 70px;
 	height: 70px;
 	border:1px solid #e5e5e5;
-	background: url('../img/photo.jpg') center center;
+	background: url('../img/product.jpg') center center;
 	background-size: cover;
 	cursor: pointer;
+}
+.product-one{
+	border: 1px solid red;
+	opacity: 0.5;
+}
+.product-two{
+	background: url('../img/1200x600.jpg') center center;
+	background-size: cover;
+}
+.product-three{
+	background: url('../img/photo.jpg') center center;
+	background-size: cover;
 }
 .product__title{
 	font-weight: bold;

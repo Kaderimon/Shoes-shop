@@ -143,7 +143,7 @@
 				<h3 class="sign-up__title">SIGN IP TO RECEIVE OUR UPDATES</h3>
 				<p class="sign-up__text">Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penetibus et ultrices volutpat.</p>
 				<form class="sign-up__form">
-					<input class="sign-up__input" type="email" placeholder="Your e-mail">
+					<input class="sign-up__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z0-9]{1,}$" type="email" placeholder="Your e-mail" oninvalid="this.setCustomValidity('Wow')" onvalid="setCustomValidity('good')">
 					<button class="sign-up__button" type="submit" value="Submit">Add</button>
 				</form>
 			</section>
