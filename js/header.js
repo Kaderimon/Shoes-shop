@@ -30,6 +30,7 @@
 	function checkSearchField(e) {
 		let field = document.querySelector('.search-form__input').value;
 		if (field != "") {
+			e.preventDefault();
 			location.href = 'category-all.html';
 		} else {
 			e.preventDefault();

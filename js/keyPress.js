@@ -1,21 +1,12 @@
-(function(){
-
-	document.body.onload = function(){
-		setClickEvent();
- 	}
-
-	function setClickEvent(){
-		let temp=document.querySelector('.search-form__input');
-		for(let i = 0;i<temp.length;i++){
-			temp[i].addEventListener("onkeypress", onClickTd);
-		}
-	}
-
-
-	function onClickTd(e){
-		if(e.keyKode == 13){
-			location.href = 'category-all.html';
-		}
-	}
-
-})();	
+(function() {
+  let input = document.querySelector('.search-form__input')
+  input.addEventListener('keydown', function(e) {
+    if (e.keyCode === 13) {
+      location.href="category-all.html";
+    }
+    if (e.keyCode === 27) {
+    	document.querySelector('.search-form').style.display = 'none';
+		document.querySelector('.search-button').style.display = 'block';
+    };
+  });
+})();
