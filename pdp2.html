@@ -6,11 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>E-commerce</title>
 	<link rel="stylesheet" href="fonts/stylesheet.css">
-	<link rel="stylesheet" href="css/category.css">
+	<link rel="stylesheet" href="css/pdp.css">
 	<script type="text/javascript" src="js/basketQty.js" defer></script>
 	<script type="text/javascript" src="js/header.js" defer></script>
-	<script type="text/javascript" src="js/category.js" defer></script>
+	<script type="text/javascript" src="js/pdp.js" defer></script>
 	<script type="text/javascript" src="js/slider.js" defer></script>
+	<script type="text/javascript" src="js/photoSwitcher.js" defer></script>
+	<script type="text/javascript" src="js/keyPress.js" defer></script>
 </head>
 <body>
 	<div id="wrapper" class="clearfix">
@@ -45,107 +47,38 @@
 				</ul>
 		</nav>
 		<main>
-			<p class="path">HOME / MEN</p>
-			<section class="category">
-				<h1 class="category-title">COATS</h1>
-				<div class="category-wrap">
-					<div class="category-item">
-						<div class="category-item__image">
-							<img class="category-item__image-img" src="img/1200x600.jpg" alt="">
-						</div>
-						<h3 class="category-item__name">Double-Layered Top</h3>
-						<p class="category-item__price">666.99$</p>
-					</div>
-					<div class="category-item">
-						<div class="category-item__image">
-							<img class="category-item__image-img" src="img/photo2.jpg" alt="">
-						</div>
-						<h3 class="category-item__name">Double-Layered Top</h3>
-						<p class="category-item__price">666.99$</p>
-					</div>
-					<div class="category-item">
-						<div class="category-item__image">
-							<img class="category-item__image-img" src="img/photo.jpg" alt="">
-						</div>
-						<h3 class="category-item__name">Some Product Name</h3>
-						<p class="category-item__price">666.99$</p>
-					</div>
-					<div class="category-item">
-						<div class="category-item__image">
-							<img class="category-item__image-img" src="img/photo.jpg" alt="">
-						</div>
-						<h3 class="category-item__name">Some Product Name</h3>
-						<p class="category-item__price">666.99$</p>
-					</div>
+			<p class="path">HOME / MEN / SHOES / FLORAL PLIMSOLL</p>
+			<section class="product">
+				<div class="product-image">
+					<div class="product-image-wrap">
+						<div class="product-image-wrap__thumb product-one"></div>
+						<div class="product-image-wrap__thumb product-two"></div>
+						<div class="product-image-wrap__thumb product-three"></div>
+					</div>					
 				</div>
+				<h1 class="product__title">RASSOL FASSOL</h1>
+				<p class="product__article">Article number: 14210160762</p>
+				<p class="product__price">€49.95</p>
+				<p class="product__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</p>
+				<p class="product__text">Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
+				<h3 class="product__size-text">SIZE</h3>
+				<form method="post">
+					<fieldset class="size-field">
+							<input id="38" type="radio" value="38" name="size" checked>
+					       	<label for="38">38</label>
+							<input id="39" type="radio" value="39" name="size" >
+					       	<label for="39">39</label>
+					    	<input id="40" type="radio" value="40" name="size" >
+					       	<label for="40">40</label>
+					       	<input id="41" type="radio" value="41" name="size" >
+					       	<label for="41">41</label>
+					       	<input id="42" type="radio" value="42" name="size" >
+					       	<label for="42">42</label>
+					   </fieldset>
+					<button class="product__button">ADD TO CART</button>
+					<button class="product__button green">PRODUCT ADDED</button>
+				</form>					
 			</section>
-			<section class="category">
-				<h1 class="category-title">OUTWEAR</h1>
-				<div class="category-wrap">
-					<div class="category-item">
-						<div class="category-item__image">
-							<img class="category-item__image-img" src="img/1200x600.jpg" alt="">
-						</div>
-						<h3 class="category-item__name">Double-Layered Top</h3>
-						<p class="category-item__price">666.99$</p>
-					</div>
-					<div class="category-item">
-						<div class="category-item__image">
-							<img class="category-item__image-img" src="img/photo2.jpg" alt="">
-						</div>
-						<h3 class="category-item__name">Double-Layered Top</h3>
-						<p class="category-item__price">666.99$</p>
-					</div>
-					<div class="category-item">
-						<div class="category-item__image">
-							<img class="category-item__image-img" src="img/photo.jpg" alt="">
-						</div>
-						<h3 class="category-item__name">Some Product Name</h3>
-						<p class="category-item__price">666.99$</p>
-					</div>
-					<div class="category-item">
-						<div class="category-item__image">
-							<img class="category-item__image-img" src="img/photo.jpg" alt="">
-						</div>
-						<h3 class="category-item__name">Some Product Name</h3>
-						<p class="category-item__price">666.99$</p>
-					</div>
-				</div>
-			</section>
-			<section class="category">
-				<h1 class="category-title">T-SHIRTS</h1>
-				<div class="category-wrap">
-					<div class="category-item">
-						<div class="category-item__image">
-							<img class="category-item__image-img" src="img/1200x600.jpg" alt="">
-						</div>
-						<h3 class="category-item__name">Double-Layered Top</h3>
-						<p class="category-item__price">666.99$</p>
-					</div>
-					<div class="category-item">
-						<div class="category-item__image">
-							<img class="category-item__image-img" src="img/photo2.jpg" alt="">
-						</div>
-						<h3 class="category-item__name">Double-Layered Top</h3>
-						<p class="category-item__price">666.99$</p>
-					</div>
-					<div class="category-item">
-						<div class="category-item__image">
-							<img class="category-item__image-img" src="img/photo.jpg" alt="">
-						</div>
-						<h3 class="category-item__name">Some Product Name</h3>
-						<p class="category-item__price">666.99$</p>
-					</div>
-					<div class="category-item">
-						<div class="category-item__image">
-							<img class="category-item__image-img" src="img/photo.jpg" alt="">
-						</div>
-						<h3 class="category-item__name">Some Product Name</h3>
-						<p class="category-item__price">666.99$</p>
-					</div>
-				</div>
-			</section>
-			<h2 class="lookbook">Check our lookbook</h2>
 		</main>
 		<div class="slider">
 			<button class="slider__button_left"></button>

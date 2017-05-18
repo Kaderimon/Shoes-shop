@@ -1,5 +1,5 @@
 (function() {
-
+	basketQty();
 	document.addEventListener("DOMContentLoaded", function() {
 		document.body.addEventListener("click", function(e) {
 			switch (e.target.className) {
