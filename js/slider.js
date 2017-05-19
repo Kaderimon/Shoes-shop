@@ -2,16 +2,14 @@
 	let sliderScroll;
 	let slider = document.getElementsByClassName('slider')[0];
 	document.addEventListener("DOMContentLoaded", function() {
-		calcScroll()
+		calcScroll();
 		document.body.addEventListener("click", function(e) {
 			switch (e.target.className) {
 				case 'slider__button_left':
 					scrollSliderLeft(e.target);
-					calcScroll();
 					break;
 				case 'slider__button_right':
 					scrollSliderRight(e.target);
-					calcScroll();
 					break;
 				default:
 					//console.log(e.target.className);
@@ -21,18 +19,11 @@
 	});
 
 	function calcScroll() {
-		let buttonsWidth = 80;
-		let itemWidth = 200;
-		let sliderStyles = window.getComputedStyle(slider);
-		let sliderWidth = sliderStyles.width.split("");
-		sliderWidth.length = sliderWidth.length - 2;
-		sliderWidth = sliderWidth.join("");
-		let calcSroll = (sliderWidth - buttonsWidth) / itemWidth;
-		if (slider.scrollLeft == 0) {
-			sliderScroll = calcSroll / 10 * 200;
-		} else {
-			sliderScroll = 200;
-		}
+		let item = document.querySelector(".slider__img");
+		let sliderStyles = window.getComputedStyle(item);
+		let tempWidthArr = sliderStyles.width.split("");
+		tempWidthArr.length = tempWidthArr.length-2;
+		sliderScroll = Number(tempWidthArr.join(""));
 	}
 
 	function scrollSliderLeft(e) {
